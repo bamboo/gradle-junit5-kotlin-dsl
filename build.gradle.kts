@@ -63,4 +63,4 @@ val functionalTest by tasks.creating(Test::class) {
     }
 }
 
-tasks.getByName("check").dependsOn(functionalTest)
+tasks["check"].dependsOn(functionalTest)
